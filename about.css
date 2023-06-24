@@ -1,0 +1,223 @@
+.side_bar {
+  position: fixed;
+  width: 100px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  background-color: #fff;
+  border-right: 2.5px dashed #B1D7B4;
+  transition: all 0.3s ease-in-out;
+}
+.side_bar .nav_header .logo {
+  display: none;
+}
+.side_bar .nav_header .menu_bar {
+  width: 30px;
+  height: 30px;
+  padding: 0 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.side_bar .nav_header .menu_bar .menu {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.4s ease-in-out;
+}
+.side_bar .nav_header .menu_bar .bg_white {
+  background-color: #fff;
+}
+.side_bar .nav_header .menu_bar-open span:first-child {
+  width: 90%;
+}
+.side_bar .nav_header .menu_bar-open span:last-child {
+  width: 85%;
+}
+.side_bar .side_bar_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+}
+.side_bar .side_bar_list li {
+  cursor: pointer;
+}
+.side_bar .side_bar_list li a {
+  position: relative;
+  display: flex;
+  width: 50px;
+  height: auto;
+  border-radius: 4px;
+  padding: 5px;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+  color: #000;
+}
+.side_bar .side_bar_list li a:hover {
+  background-color: #B1D7B4;
+}
+.side_bar .side_bar_list li a i {
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  transition: all 0.1s;
+}
+.side_bar .side_bar_list li a span {
+  position: absolute;
+  display: none;
+  transition: all 0.1s;
+}
+.side_bar .side_bar_list li .color_white {
+  color: #fff;
+}
+.side_bar .side_bar_list li .side_bar_cont-on {
+  justify-content: flex-start;
+  width: 100px;
+  transition: all 0.3s ease-in-out;
+  padding-left: 10px;
+}
+.side_bar .side_bar_list li .side_bar_cont-on span {
+  width: 70%;
+  display: block;
+  left: 60px;
+  transition: all 0.1s;
+}
+.side_bar .side_bar_list li .side_bar_cont-on i {
+  width: 30%;
+  transition: all 0.3s;
+}
+
+.theme-wrapper {
+  display: flex;
+  margin-bottom: 50px;
+}
+.theme-wrapper .theme-btn {
+  width: 55px;
+  height: 30px;
+  background-color: #B1D7B4;
+  border-radius: 25px;
+  position: relative;
+  display: flex;
+  z-index: 50;
+  cursor: pointer;
+}
+.theme-wrapper .theme-btn .moon {
+  font-size: 22px;
+  margin-left: 5px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: all 0.4s;
+}
+.theme-wrapper .theme-btn .sun {
+  font-size: 20px;
+  margin-left: 5px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.theme-wrapper .theme-btn .move_on {
+  opacity: 1;
+  transition: all 0.3s;
+  margin-left: 30px;
+}
+.theme-wrapper .theme-btn .move_off {
+  opacity: 0;
+  transition: all 0.3s;
+  margin-left: 30px;
+}
+.theme-wrapper .theme-ball {
+  display: none;
+}
+
+.open {
+  width: 200px;
+}
+
+.home {
+  position: relative;
+  top: 0;
+  left: 100px;
+  width: calc(100% - 100px);
+  display: table;
+  background-color: #fff;
+  z-index: 6;
+  transition: all 0.5s;
+}
+.home .home_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+.home .home_wrap .about_title1 {
+  font-size: 45px;
+  font-weight: 600;
+  font-family: "EnvironmentR";
+  margin-top: 350px;
+}
+.home .home_wrap .about_text1 {
+  font-family: "EnvironmentR";
+  font-size: 25px;
+  text-align: center;
+  line-height: 28px;
+  margin-top: 100px;
+}
+.home .home_wrap .about_img1 {
+  max-width: 700px;
+  margin-top: 100px;
+}
+.home .home_wrap .btn {
+  border: 1px solid #000;
+  border-radius: 50px;
+  width: 200px;
+  height: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.home .home_wrap .btn a {
+  display: block;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  color: #000;
+  text-align: center;
+  line-height: 50px;
+}
+.home .home_wrap .btn a:hover {
+  background-color: #000;
+  color: #fff;
+  border-radius: 50px;
+}
+.home .bg_dark {
+  background-color: #333;
+}
+
+.bg_dark {
+  background-color: #333;
+}
+
+@font-face {
+  font-family: "EnvironmentR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/EnvironmentR.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}/*# sourceMappingURL=about.css.map */
